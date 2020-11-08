@@ -20,7 +20,7 @@ function App() {
           {/* <Route path ="/">
           {history.push("/feedback")}
        </Route> */}
-          <Redirect from="/" to="/feedback" />
+          <Redirect exact from="/" to="/feedback" />
           <Route path="/feedback_submit" exact>
             <FeedbackConfirmation />
           </Route>
