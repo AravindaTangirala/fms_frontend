@@ -21,8 +21,8 @@ const FeedbackSummary = () => {
   const [editedRecord, setEditedRecord] = useState("");
   const [showEdited, setShowEdited] = useState(false);
   useEffect(() => {
-    //Axios call
-    //  axios.get("http://localhost:5000/feedback_summary").then((res) => {
+    //Axios
+    //  axios.get("https://secure-shelf-01993.herokuapp.com/feedback_summary").then((res) => {
     //    console.log("successfully received ",res  );
     //    setResponse(res.data);
     //  });
@@ -68,7 +68,7 @@ const FeedbackSummary = () => {
     const editedCourseName = document.getElementById("edit__courseName").value;
     const editedRating = document.getElementById("edit__rating").value;
     const editedComment = document.getElementById("edit__comment").value;
-    const url = `http://localhost:5000/edit/${idToEdit}`;
+    const url = `https://secure-shelf-01993.herokuapp.com/edit/${idToEdit}`;
     axios
       .put(url, {
         username: editedUserName,
