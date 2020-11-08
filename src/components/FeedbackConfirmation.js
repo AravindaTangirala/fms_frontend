@@ -40,7 +40,7 @@ const FeedbackConfirmation = (props) => {
     /// dispatch({type:actionType.SAVE_DATA_ASYNC})
 
     axios
-      .post("https://secure-shelf-01993.herokuapp.com/feedback_summary", {
+      .post("https://fms-mongodb-backend.herokuapp.com/feedback_summary", {
         username: user.user,
         coursename: course,
         rating: rating,

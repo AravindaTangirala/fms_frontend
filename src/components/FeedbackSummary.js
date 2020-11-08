@@ -22,7 +22,7 @@ const FeedbackSummary = () => {
   const [showEdited, setShowEdited] = useState(false);
   useEffect(() => {
     //Axios
-    //  axios.get("https://secure-shelf-01993.herokuapp.com/feedback_summary").then((res) => {
+    //  axios.get("https://fms-mongodb-backend.herokuapp.com/feedback_summary").then((res) => {
     //    console.log("successfully received ",res  );
     //    setResponse(res.data);
     //  });
@@ -68,7 +68,7 @@ const FeedbackSummary = () => {
     const editedCourseName = document.getElementById("edit__courseName").value;
     const editedRating = document.getElementById("edit__rating").value;
     const editedComment = document.getElementById("edit__comment").value;
-    const url = `https://secure-shelf-01993.herokuapp.com/edit/${idToEdit}`;
+    const url = `https://fms-mongodb-backend.herokuapp.com/edit/${idToEdit}`;
     axios
       .put(url, {
         username: editedUserName,
